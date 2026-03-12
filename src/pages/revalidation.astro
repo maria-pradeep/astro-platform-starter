@@ -13,7 +13,7 @@ Object.entries(headers).map(([k, v]) => {
 });
 
 const explainer = `
-
+ 
 `;
 
 const exampleTag = tags[randomInt(0, tags.length - 1)];
@@ -23,18 +23,60 @@ const exampleTag = tags[randomInt(0, tags.length - 1)];
     <h1 class="mb-10">Professional Certifications</h1>
     <Markdown content={explainer} class="mb-10" />
     <div class="flex flex-wrap gap-4">
-            1. Microsoft Generative AI for Data Analysis Professional Certificate  – 27-Feb-2026 
-            2. IBM AI Developer Professional Certificate – 23-Feb-2026 
-            3. Google AI Professional Certificate – 20-Feb-2026 
-            4. IBM - Building Generative AI-Powered Applications with Python – 20-Feb-2026 
-            5. Google Project Management Professional Certificate – 16-Feb-2026  
-            6. Microsoft Azure SQL – 17-Feb-2026  
-            7. AI-Powered Software Development Certification – 27-Jan-2026  
-            8. Generative AI Leader Professional Certificate – 29-Jan-2026 
-            9. Certified ICAgile Expert - Achievement Date: July 2014 
-            10. Microsoft Certified Technology Specialist: Dynamics CRM 2011 Customization and Configuration - 
-                Score: 942 (November 2011) 
-            11. Brain Bench: .NET 4.0 Framework Certified - Score: 3.12 (February 2013) 
+        <table class="w-full table-auto border-collapse">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="border px-4 py-2 text-left">Certification</th>
+                    <th class="border px-4 py-2 text-left">Date / Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border px-4 py-2">Microsoft Generative AI for Data Analysis Professional Certificate</td>
+                    <td class="border px-4 py-2">27‑Feb‑2026</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">IBM AI Developer Professional Certificate</td>
+                    <td class="border px-4 py-2">23‑Feb‑2026</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Google AI Professional Certificate</td>
+                    <td class="border px-4 py-2">20‑Feb‑2026</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">IBM - Building Generative AI-Powered Applications with Python</td>
+                    <td class="border px-4 py-2">20‑Feb‑2026</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Google Project Management Professional Certificate</td>
+                    <td class="border px-4 py-2">16‑Feb‑2026</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Microsoft Azure SQL</td>
+                    <td class="border px-4 py-2">17‑Feb‑2026</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">AI-Powered Software Development Certification</td>
+                    <td class="border px-4 py-2">27‑Jan‑2026</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Generative AI Leader Professional Certificate</td>
+                    <td class="border px-4 py-2">29‑Jan‑2026</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Certified ICAgile Expert</td>
+                    <td class="border px-4 py-2">Achievement Date: July 2014</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Microsoft Certified Technology Specialist: Dynamics CRM 2011 Customization and Configuration</td>
+                    <td class="border px-4 py-2">Score: 942 (November 2011)</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Brain Bench: .NET 4.0 Framework Certified</td>
+                    <td class="border px-4 py-2">Score: 3.12 (February 2013)</td>
+                </tr>
+            </tbody>
+        </table>
         <button class="revalidate-button btn" data-tag={exampleTag}>Invalidate tag: {exampleTag}</button>
         <button class="btn" onclick="location.reload()">Reload page</button>
     </div>
