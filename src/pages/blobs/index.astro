@@ -1,26 +1,17 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Markdown from '../../components/Markdown.astro';
-import ShapeEditor from './_components/ShapeEditor.tsx';
 import { uploadDisabled } from '../../utils';
 
 const explainer = `
-[Netlify Blobs](https://docs.netlify.com/blobs/overview/) provides an object store for any kind of data, be it JSON, binary, 
-or [really](https://mk.gg/projects/chalkstream) anything else ([really!](https://mk.gg/projects/turbofan)). In this example, the blob store is used to **hold the data of user-generated random blobby shapes**.
-
-Below is an Astro island with a React component for editing, uploading and viewing blobs to the blob store 🙂.
+Contact: +91 99402 32249 | Email : <a href="mailto:fernando.pradeep@gmail.com">fernando.pradeep@gmail.com </a> | LinkedIn  : <a href="https://www.linkedin.com/in/maria-pradeep/"> linkedin.com/in/maria-pradeep </a> | GitHub : <a href="https://github.com/maria-pradeep">github.com/maria-pradeep </a>
 `;
 
-const uploadDisabledText = `
-User uploads are disabled in this site. To run your own and try it out: 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/astro-platform-starter">
-<img src="https://www.netlify.com/img/deploy/button.svg" style="display: inline;" alt="Deploy to Netlify" />
-</a>
-`;
+
 ---
 
-<Layout title="Blobs">
-    <h1 class="mb-10">Blobs x Blobs</h1>
+<Layout title="Contact">
+    <h1 class="mb-10">Contact/h1>
     <Markdown content={explainer} class="mb-12" />
-    <ShapeEditor client:load />
+
 </Layout>
